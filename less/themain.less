@@ -16,30 +16,57 @@ section.maincontent {
     flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
+
+    @media @tablet {
+        background-position-y: +50px;
+    }
+
 
     
     
-    div.boxOne, div.boxTwo, div.boxThree, div.boxFour {
-    width: 45%;
+    div.boxOne, div.boxTwo, div.boxThree, div.boxFour, div.boxFive {
+    width: 80%;
     display: flex;
     margin: auto;
     justify-items: center;
-    margin-top: 20px;
+    margin-top: 20px;    
+    
+
+    @media @phone {
+        width: 45%;
+        display: flex;
+        margin: auto;
+        justify-items: center;
+        margin-top: 20px;
+    }
+
+    @media @tablet {
+        padding-bottom: 50px;
+    }
     
         h3, p {
             padding: 2px;
             .backgroundAndColor;
+            
         }
         h3 {
             height: 25%;
             .roundedges;
+            @media @tablet {
+                font-size: 2.0rem;}
+
         }
 
         p {
             border: 2px outset darkslategray;
+            @media @tablet {
+                font-size: 1.5rem;
+            }
             
         }
     }
+    
 
 
 }

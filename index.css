@@ -270,29 +270,59 @@ header h1 {
 section.maincontent {
   background-image: url("img/behind.jpg");
   background-size: 100%;
-  display: flex;
   flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: flex;
+}
+@media (min-width: 700px) {
+  section.maincontent {
+    background-position-y: 50px;
+  }
 }
 section.maincontent div.boxOne,
 section.maincontent div.boxTwo,
 section.maincontent div.boxThree,
-section.maincontent div.boxFour {
-  width: 45%;
+section.maincontent div.boxFour,
+section.maincontent div.boxFive {
+  width: 80%;
   display: flex;
   margin: auto;
   justify-items: center;
   margin-top: 20px;
 }
+@media (min-width:500px) {
+  section.maincontent div.boxOne,
+  section.maincontent div.boxTwo,
+  section.maincontent div.boxThree,
+  section.maincontent div.boxFour,
+  section.maincontent div.boxFive {
+    width: 45%;
+    display: flex;
+    margin: auto;
+    justify-items: center;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 700px) {
+  section.maincontent div.boxOne,
+  section.maincontent div.boxTwo,
+  section.maincontent div.boxThree,
+  section.maincontent div.boxFour,
+  section.maincontent div.boxFive {
+    padding-bottom: 50px;
+  }
+}
 section.maincontent div.boxOne h3,
 section.maincontent div.boxTwo h3,
 section.maincontent div.boxThree h3,
 section.maincontent div.boxFour h3,
+section.maincontent div.boxFive h3,
 section.maincontent div.boxOne p,
 section.maincontent div.boxTwo p,
 section.maincontent div.boxThree p,
-section.maincontent div.boxFour p {
+section.maincontent div.boxFour p,
+section.maincontent div.boxFive p {
   padding: 2px;
   background: silver;
   color: white;
@@ -300,15 +330,35 @@ section.maincontent div.boxFour p {
 section.maincontent div.boxOne h3,
 section.maincontent div.boxTwo h3,
 section.maincontent div.boxThree h3,
-section.maincontent div.boxFour h3 {
+section.maincontent div.boxFour h3,
+section.maincontent div.boxFive h3 {
   height: 25%;
   border-radius: 10%;
+}
+@media (min-width: 700px) {
+  section.maincontent div.boxOne h3,
+  section.maincontent div.boxTwo h3,
+  section.maincontent div.boxThree h3,
+  section.maincontent div.boxFour h3,
+  section.maincontent div.boxFive h3 {
+    font-size: 2rem;
+  }
 }
 section.maincontent div.boxOne p,
 section.maincontent div.boxTwo p,
 section.maincontent div.boxThree p,
-section.maincontent div.boxFour p {
+section.maincontent div.boxFour p,
+section.maincontent div.boxFive p {
   border: 2px outset darkslategray;
+}
+@media (min-width: 700px) {
+  section.maincontent div.boxOne p,
+  section.maincontent div.boxTwo p,
+  section.maincontent div.boxThree p,
+  section.maincontent div.boxFour p,
+  section.maincontent div.boxFive p {
+    font-size: 1.5rem;
+  }
 }
 div.boxThree img {
   width: 80%;
@@ -387,4 +437,15 @@ section.contactpgsecTwo div.creator img {
   height: 50px;
   border: 2px outset darkslategray;
   margin: 4px;
+}
+.contactpgsecThree {
+  margin: 3%;
+  width: 50%;
+}
+form input {
+  margin: 5px auto;
+}
+#messagebox {
+  width: 80%;
+  Height: 30px;
 }
