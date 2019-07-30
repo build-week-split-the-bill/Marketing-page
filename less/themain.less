@@ -10,9 +10,13 @@ header {
 }
 
 section.maincontent { 
-    .backgroundAndColor;
+    background-image: url("img/behind.jpg");
+    background-size: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     
     
     div.boxOne, div.boxTwo, div.boxThree, div.boxFour {
@@ -20,14 +24,20 @@ section.maincontent {
     display: flex;
     margin: auto;
     justify-items: center;
+    margin-top: 20px;
     
         h3, p {
             padding: 2px;
+            .backgroundAndColor;
+        }
+        h3 {
+            height: 25%;
+            .roundedges;
         }
 
         p {
             border: 2px outset darkslategray;
-            .roundedges;
+            
         }
     }
 
