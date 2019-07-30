@@ -1,4 +1,44 @@
-section.maincontent {
-    .backgroundAndColor;
+
+header {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        justify-self: center;
+        font-size: 2.0rem;
+    }
 }
 
+section.maincontent { 
+    .backgroundAndColor;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    div.boxOne, div.boxTwo, div.boxThree, div.boxFour {
+    width: 45%;
+    display: flex;
+    margin: auto;
+    justify-items: center;
+    
+        h3, p {
+            padding: 2px;
+        }
+
+        p {
+            border: 2px outset darkslategray;
+            .roundedges;
+        }
+    }
+
+
+}
+
+div.boxThree img {
+    width: 80%;
+    height: 8%;
+    .roundedges;
+}
+strong {
+    color: darkslategray;
+}

@@ -143,9 +143,25 @@ body {
   margin: 0 auto;
   /*width and marging set to the page as an entire view*/
 }
+.transition-fade {
+  opacity: 1;
+  transition: 500ms;
+  transform: translateX(0);
+  transform-origin: left;
+}
+html.is-animating .transition-fade {
+  opacity: 1;
+  transform: translateX(100%);
+}
+html.isleaving .transition-fade {
+  opacity: 0;
+  transform: translateX(0);
+}
 body {
   width: 100%;
   margin: auto;
+  background: silver;
+  color: white;
 }
 img {
   width: 100%;
@@ -243,9 +259,53 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+header {
+  display: flex;
+  flex-direction: column;
+}
+header h1 {
+  justify-self: center;
+  font-size: 2rem;
+}
 section.maincontent {
   background: silver;
   color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.maincontent div.boxOne,
+section.maincontent div.boxTwo,
+section.maincontent div.boxThree,
+section.maincontent div.boxFour {
+  width: 45%;
+  display: flex;
+  margin: auto;
+  justify-items: center;
+}
+section.maincontent div.boxOne h3,
+section.maincontent div.boxTwo h3,
+section.maincontent div.boxThree h3,
+section.maincontent div.boxFour h3,
+section.maincontent div.boxOne p,
+section.maincontent div.boxTwo p,
+section.maincontent div.boxThree p,
+section.maincontent div.boxFour p {
+  padding: 2px;
+}
+section.maincontent div.boxOne p,
+section.maincontent div.boxTwo p,
+section.maincontent div.boxThree p,
+section.maincontent div.boxFour p {
+  border: 2px outset darkslategray;
+  border-radius: 10%;
+}
+div.boxThree img {
+  width: 80%;
+  height: 8%;
+  border-radius: 10%;
+}
+strong {
+  color: darkslategray;
 }
 section.contactpgsecOne {
   background: silver;
@@ -257,6 +317,7 @@ section.contactpgsecOne {
   justify-content: center;
   align-items: center;
   border-bottom: 2px outset black;
+  margin-bottom: 2px;
 }
 section.contactpgsecOne h2 {
   font-size: 1.8rem;
@@ -273,6 +334,10 @@ section.contactpgsecTwo {
   background: silver;
   color: white;
   padding-bottom: 10px;
+  background-image: url("img/money.jpg");
+  background-repeat: repeat-y;
+  background-position-y: -200px;
+  background-size: 100%;
 }
 section.contactpgsecTwo h2 {
   padding: 30px;
@@ -291,7 +356,7 @@ section.contactpgsecTwo div.thepeepsPics {
   justify-content: center;
   padding-bottom: 30px;
   padding-top: 30px;
-  margin: auto;
+  margin: 10px auto;
   padding-bottom: 20px;
   flex-wrap: wrap;
   background: linear-gradient(180deg, #000000, #6a806c);
