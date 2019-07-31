@@ -268,6 +268,8 @@ header h1 {
   font-size: 2rem;
 }
 section.maincontent {
+  width: 95%;
+  margin: 0 2.5% 0 2.5%;
   background-image: url("img/behind.jpg");
   background-size: 100%;
   flex-wrap: wrap;
@@ -323,7 +325,8 @@ section.maincontent div.boxTwo p,
 section.maincontent div.boxThree p,
 section.maincontent div.boxFour p,
 section.maincontent div.boxFive p {
-  padding: 2px;
+  padding: 5px;
+  margin: 5px;
   background: silver;
   color: white;
 }
@@ -334,6 +337,7 @@ section.maincontent div.boxFour h3,
 section.maincontent div.boxFive h3 {
   height: 25%;
   border-radius: 10%;
+  border: 2px outset darkslategray;
 }
 @media (min-width: 700px) {
   section.maincontent div.boxOne h3,
@@ -378,7 +382,7 @@ section.contactpgsecOne {
   justify-content: center;
   align-items: center;
   border-bottom: 2px outset black;
-  margin-bottom: 2px;
+  padding-bottom: 2px;
 }
 section.contactpgsecOne h2 {
   font-size: 1.8rem;
@@ -386,7 +390,7 @@ section.contactpgsecOne h2 {
   padding: 10px;
 }
 section.contactpgsecOne .divwords {
-  margin: auto;
+  margin: 0 auto;
   width: 75%;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -394,17 +398,21 @@ section.contactpgsecOne .divwords {
 section.contactpgsecTwo {
   background: silver;
   color: white;
-  padding-bottom: 10px;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 1px;
   background-image: url("img/money.jpg");
   background-repeat: repeat-y;
   background-position-y: -200px;
   background-size: 100%;
 }
 section.contactpgsecTwo h2 {
-  padding: 30px;
+  padding: 10px;
   font-size: 1.4rem;
   margin: 0 auto;
   margin-bottom: 15px;
+  background: silver;
+  opacity: 0.9;
   display: flex;
   align-self: center;
   width: 40%;
@@ -421,6 +429,7 @@ section.contactpgsecTwo div.thepeepsPics {
   padding-bottom: 20px;
   flex-wrap: wrap;
   background: linear-gradient(180deg, #000000, #6a806c);
+  opacity: 0.9;
   border-radius: 10%;
 }
 section.contactpgsecTwo div.creator {
