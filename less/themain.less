@@ -1,4 +1,85 @@
-section.maincontent {
-    .backgroundAndColor;
+
+header {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        justify-self: center;
+        font-size: 2.0rem;
+    }
 }
 
+section.maincontent { 
+    width:95%;
+    margin: 0 2.5% 0 2.5%;
+    background-image: url("img/behind.jpg");
+    background-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+
+    @media @tablet {
+        background-position-y: +50px;
+    }
+
+
+    
+    
+    div.boxOne, div.boxTwo, div.boxThree, div.boxFour, div.boxFive {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-items: center;
+    margin-top: 20px;    
+    
+
+    @media @phone {
+        width: 45%;
+        display: flex;
+        margin: auto;
+        justify-items: center;
+        margin-top: 20px;
+    }
+
+    @media @tablet {
+        padding-bottom: 50px;
+    }
+    
+        h3, p {
+            padding: 5px;
+            margin: 5px;
+            .backgroundAndColor;
+            
+        }
+        h3 {
+            height: 25%;
+            .roundedges;
+            border: 2px outset darkslategray;
+            @media @tablet {
+                font-size: 2.0rem;}
+
+        }
+
+        p {
+            border: 2px outset darkslategray;
+            @media @tablet {
+                font-size: 1.5rem;
+            }
+            
+        }
+    }
+    
+
+
+}
+
+div.boxThree img {
+    width: 80%;
+    height: 8%;
+    .roundedges;
+}
+strong {
+    color: darkslategray;
+}

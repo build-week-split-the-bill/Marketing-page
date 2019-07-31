@@ -5,65 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="index.css">
-    <title>Split The Bill Contact!</title>
+    <title>Split The Bill About Us!</title>
 </head>
 
 <body>
     <header>
-
+        <h1>Split The Bill</h1>
         <nav class="nav">
-            <a href="index.html">Home</a>
+            <a href="/index.html">Home</a>
             <a href="">Login</a>
-            <a href="contactpage.html">Contact</a>
+            <a href="/contactpage.html">About Us</a>
         </nav>
     </header>
-    <section class="contactpgsecOne">
-        <div class="divtitle">
-            <h2>Look Mom! We Made This!</h2>
-        </div>
-        <div class="divwords">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa temporibus quos maiores pariatur numquam atque ab quisquam iure iste, fuga ad </p>
-        </div>
-    </section>
-    <section class="contactpgsecTwo">
-        <h2>THE PEEPS OF SPLIT THE BILL</h2>
-        <div class="thepeepsPics">
-            <div class="creator">
-                <h3>Sascha M.</h3>
-                <a href="https://github.com/SaschaWebDev"><img src="img/sascha.png" alt="image of Sascha Majewsky"></a>
+    <main id="swup" class="transition-fade">
 
+        <section class="contactpgsecOne">
+            <div class="divtitle">
+                <h2>Look Mom! We Made This!</h2>
             </div>
-            <div class="creator">
-                <h3>Kevin T.</h3>
-                <a href="https://github.com/KevinTou"><img src="img/kevin.png" alt="image of Kevin Tou"></a>
+            <div class="divwords">
+                <p>Below are the developers that worked very hard on <strong>Split The Bill</strong>. They worked together to bring you the best application they could and tirelessly combined visual and functional components for the best possible expirience.
+                    You can click on the picture below and will be directed to each person's repository on Github. Those repositories are a complilation of other projects or learning exercises.</p>
+            </div>
+        </section>
+        <section class="contactpgsecTwo">
+            <br>
+            <h2 class="lowerTitle">THE PEEPS OF SPLIT THE BILL</h2>
+            <div class="thepeepsPics">
+                <div class="creator">
+                    <h3>Sascha M.</h3>
+                    <a href="https://github.com/SaschaWebDev"><img src="img/sascha.png" alt="image of Sascha Majewsky"></a>
 
-            </div>
-            <div class="creator">
-                <h3>Shawn M.</h3>
-                <a href="https://github.com/ShawnM76"><img src="img/shawn.jpeg" alt="image of Shawn McManus"></a>
+                </div>
+                <div class="creator">
+                    <h3>Kevin T.</h3>
+                    <a href="https://github.com/KevinTou"><img src="img/kevin.png" alt="image of Kevin Tou"></a>
 
+                </div>
+                <div class="creator">
+                    <h3>Shawn M.</h3>
+                    <a href="https://github.com/ShawnM76"><img src="img/shawn.jpeg" alt="image of Shawn McManus"></a>
+
+                </div>
+                <div class="creator">
+                    <h3>Jarvise B.</h3>
+                    <a href="https://github.com/Fullmetal235"><img src="img/jarvise.jpeg" alt="image of Jarvise Billups-Brown"></a>
+                </div>
+
+                <div class="creator">
+                    <h3>Angela F.</h3>
+                    <a href="https://github.com/ajflowers"><img src="img/angela.jpeg" alt="image of Angela Flowers"></a>
+
+                </div>
+                <div class="creator">
+                    <h3>Joshua S.</h3>
+                    <a href="https://github.com/joshua-shockley"><img src="img/joshua.jpeg" alt="image of Joshua Shockley"></a>
+                </div>
             </div>
-            <div class="creator">
-                <h3>Jarvise B.</h3>
-                <a href="https://github.com/Fullmetal235"><img src="img/jarvise.jpeg" alt="image of Jarvise Billups-Brown"></a>
+        </section>
+        <section class="contactpgsecThree">
+            <div>
+                <h4>Fill out the form below with questions or concerns for the team to look into. Thank you for any and all constructive comments!</h4>
+                <form>
+                    <input type="text" name="Phone Number" placeholder="Phone Number">
+                    <br>
+                    <input type="text" name="email" placeholder="Email">
+                    <br>
+                    <input type="text" name="message" placeholder="Place Question Here" id="messagebox">
+                    <br>
+                    <input type="submit" name="submit">
+                </form>
             </div>
 
-            <div class="creator">
-                <h3>Angela F.</h3>
-                <a href="https://github.com/ajflowers"><img src="img/angela.jpeg" alt="image of Angela Flowers"></a>
-
-            </div>
-            <div class="creator">
-                <h3>Joshua S.</h3>
-                <a href="https://github.com/joshua-shockley"><img src="img/joshua.jpeg" alt="image of Joshua Shockley"></a>
-            </div>
-        </div>
-    </section>
-    <section class="contactpgsecThree">
-        <div></div>
-        <div></div>
-    </section>
+        </section>
+    </main>
 </body>
 <footer>
     <div class="clickbelow">
@@ -71,19 +89,19 @@
     </div>
     <div class="socialMediaButton">
         <div>
-            <a href="pinterest.com"><img src="img/pinterest.png" alt=""> </a>
+            <a href="https://www.pinterest.com" target="_blank"><img src="img/pinterest.png" alt=""> </a>
         </div>
         <div>
-            <a href="linkedin.com"><img src="img/linkedin.png" alt=""> </a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="img/linkedin.png" alt=""> </a>
         </div>
         <div>
-            <a href="instagram.com"><img src="img/instagram.png" alt=""> </a>
+            <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt=""> </a>
         </div>
         <div>
-            <a href="twitter.com"><img src="img/twitter.png" alt=""> </a>
+            <a href="https://www.twitter.com" target="_blank"><img src="img/twitter.png" alt=""> </a>
         </div>
         <div>
-            <a href="facebook.com"><img src="img/facebook.png" alt=""> </a>
+            <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt=""> </a>
         </div>
     </div>
     <br>
