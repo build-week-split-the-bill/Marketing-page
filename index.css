@@ -134,11 +134,14 @@ body {
   /*width and marging set to the page as an entire view*/
 }
 .backgroundAndColor {
-  background: silver;
+  background-color: rgba(58, 28, 81, 0.8);
   color: white;
 }
 .gradientBackground {
   background: linear-gradient(180deg, #000000, #6a806c);
+}
+.gradientBackgroundTwo {
+  background: linear-gradient(180deg, #000000, #3a1c51cc);
 }
 .roundedges {
   border-radius: 10%;
@@ -157,10 +160,13 @@ html.isleaving .transition-fade {
   opacity: 0;
   transform: translateX(0);
 }
+html {
+  font-family: 'Acme', sans-serif;
+}
 body {
   width: 100%;
   margin: auto;
-  background: silver;
+  background-color: rgba(58, 28, 81, 0.8);
   color: white;
 }
 img {
@@ -169,7 +175,7 @@ img {
   /*sets image to fill its parent space*/
 }
 header {
-  /* position: fixed; */
+  /*position: fixed; */
   background-image: url("img/money.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -186,6 +192,11 @@ header {
 @media (min-width: 700px) {
   header {
     background-position-y: -230px;
+  }
+}
+@media (min-width: 1000px) {
+  header {
+    background-position-y: -440px;
   }
 }
 nav.nav {
@@ -270,12 +281,14 @@ header h1 {
 section.maincontent {
   width: 95%;
   margin: 0 2.5% 0 2.5%;
-  background-image: url("img/behind.jpg");
+  background-color: #3a1c51;
   background-size: 100%;
   flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
+  font-size: 1.6rem;
+  color: turquoise;
 }
 @media (min-width: 700px) {
   section.maincontent {
@@ -292,8 +305,9 @@ section.maincontent div.boxFive {
   margin: auto;
   justify-items: center;
   margin-top: 20px;
+  background: linear-gradient(180deg, #000000, #3a1c51cc);
 }
-@media (min-width:500px) {
+@media (min-width: 650px) {
   section.maincontent div.boxOne,
   section.maincontent div.boxTwo,
   section.maincontent div.boxThree,
@@ -327,7 +341,7 @@ section.maincontent div.boxFour p,
 section.maincontent div.boxFive p {
   padding: 5px;
   margin: 5px;
-  background: silver;
+  background-color: rgba(58, 28, 81, 0.8);
   color: white;
 }
 section.maincontent div.boxOne h3,
@@ -353,7 +367,7 @@ section.maincontent div.boxTwo p,
 section.maincontent div.boxThree p,
 section.maincontent div.boxFour p,
 section.maincontent div.boxFive p {
-  border: 2px outset darkslategray;
+  border: 1px outset darkslategray;
 }
 @media (min-width: 700px) {
   section.maincontent div.boxOne p,
@@ -364,16 +378,11 @@ section.maincontent div.boxFive p {
     font-size: 1.5rem;
   }
 }
-div.boxThree img {
-  width: 80%;
-  height: 8%;
-  border-radius: 10%;
-}
 strong {
-  color: darkslategray;
+  color: #5882f3;
 }
 section.contactpgsecOne {
-  background: silver;
+  background-color: rgba(58, 28, 81, 0.8);
   color: white;
   width: 100%;
   margin: 0 auto;
@@ -396,7 +405,7 @@ section.contactpgsecOne .divwords {
   padding-bottom: 15px;
 }
 section.contactpgsecTwo {
-  background: silver;
+  background-color: rgba(58, 28, 81, 0.8);
   color: white;
   width: 95%;
   margin: 0 auto;
@@ -411,7 +420,7 @@ section.contactpgsecTwo h2 {
   font-size: 1.4rem;
   margin: 0 auto;
   margin-bottom: 15px;
-  background: silver;
+  background: #6a806c;
   opacity: 0.9;
   display: flex;
   align-self: center;
@@ -433,18 +442,23 @@ section.contactpgsecTwo div.thepeepsPics {
   border-radius: 10%;
 }
 section.contactpgsecTwo div.creator {
-  background: silver;
+  background-color: rgba(58, 28, 81, 0.8);
   color: white;
   width: 45%;
-  border: 3px inset darkslategray;
+  border: 1px inset darkslategray;
   display: flex;
   justify-content: center;
   margin: 4px;
+  border-radius: 15%;
+}
+section.contactpgsecTwo div.creator h3 {
+  display: flex;
+  align-items: center;
 }
 section.contactpgsecTwo div.creator img {
   width: 50px;
   height: 50px;
-  border: 2px outset darkslategray;
+  border: 3px outset darkslategray;
   margin: 4px;
 }
 .contactpgsecThree {

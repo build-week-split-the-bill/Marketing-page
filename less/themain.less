@@ -12,30 +12,33 @@ header {
 section.maincontent { 
     width:95%;
     margin: 0 2.5% 0 2.5%;
-    background-image: url("img/behind.jpg");
+    background-color: #3a1c51;
+    //background-image: url("img/behind.jpg");
     background-size: 100%;
     display: flex;
     flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
+    font-size: 1.6rem;
+    color: turquoise;
 
     @media @tablet {
         background-position-y: +50px;
+
     }
-
-
-    
+ 
     
     div.boxOne, div.boxTwo, div.boxThree, div.boxFour, div.boxFive {
     width: 80%;
     display: flex;
     margin: auto;
     justify-items: center;
-    margin-top: 20px;    
+    margin-top: 20px;  
+    .gradientBackgroundTwo;  
     
 
-    @media @phone {
+    @media @bigphone {
         width: 45%;
         display: flex;
         margin: auto;
@@ -63,7 +66,7 @@ section.maincontent {
         }
 
         p {
-            border: 2px outset darkslategray;
+            border: 1px outset darkslategray;
             @media @tablet {
                 font-size: 1.5rem;
             }
@@ -75,11 +78,6 @@ section.maincontent {
 
 }
 
-div.boxThree img {
-    width: 80%;
-    height: 8%;
-    .roundedges;
-}
 strong {
-    color: darkslategray;
+    color: rgb(88, 130, 243);
 }
